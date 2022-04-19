@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+	<name>plg_inject_headline</name>
+	<author>Joomla! Project</author>
+	<creationDate>April 2022</creationDate>
+	<copyright>(C) 2023 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>4.0.0</version>
+	<description>PLG_inject_headline_DESCRIPTION</description>
+	<files>
+        <filename plugin="injecttext">inject.php</filename>
+    </files>
+    <languages folder="language/en-GB">
+        <language tag="en-GB">plg_system_inject.ini</language>
+        <language tag="en-GB">plg_system_inject.sys.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldprefix="Joomla\Plugin\System\Injecttext\Field">
+				<field
+					name="inject_text"
+					type="text"
+					label="PLG_INJECT_TEXT_LABEL"
+                    filter="string"
+                    size="30"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
