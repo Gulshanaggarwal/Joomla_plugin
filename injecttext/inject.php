@@ -73,7 +73,7 @@ class PlgInjectHeadline extends CMSPlugin implements SubscriberInterface{
 
      function onAfterDispatch(){
          $wa = Factory::getApplication()->getDocument()->getWebAssetManager();
-         $wa->registerAndUseScript('plg_system_injectheadline', 'plg_system_injectheadline/main.js', []);
+         $wa->registerAndUseScript('plg_system_injecttext', 'plg_system_injecttext/main.js', []);
 
      }
 
